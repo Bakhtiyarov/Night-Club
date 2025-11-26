@@ -1,0 +1,103 @@
+.open {
+    margin: 185px 0 125px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        position: relative;
+    }
+
+    &__text::before {
+        content: '';
+        position: absolute;
+        width: 41px;
+        top: 65px;
+        left: 234px;
+        border: 0.78px solid rgba(68, 68, 68, 1);
+        transform: rotate(-75deg);
+        z-index: 1;
+    }
+
+    &__text::after {
+        content: '';
+        position: absolute;
+        width: 41px;
+        top: 48px;
+        left: 264px;
+        border: 0.78px solid rgba(68, 68, 68, 1);
+        transform: rotate(-165deg);
+    }
+
+    &__title {
+        position: relative;
+        width: min(295px, 100%);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 52px;
+        color: #fff;
+        margin-bottom: 75px;
+        line-height: 50px;
+
+        &-span {
+            font-size: 40.7px;
+        }
+    }
+
+    &__title::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        top: 38px;
+        left: 258px;
+        background: rgba(196, 196, 196, 1);
+        border-radius: 100%;
+    }
+
+    &__title::after {
+        content: 'МЫ ОТКРЫЛИСЬ';
+        position: absolute;
+        width: min(146px, 100%);
+        font-weight: 700;
+        font-size: 17px;
+        color: #fff;
+        top: 63px;
+        left: 213px;
+        padding: 0 8px;
+        background: linear-gradient(0deg, #C93A48, #C93A48);
+        box-shadow: 0px 0px 30px 0px rgba(189, 45, 67, 1);
+        transform: rotate(-30deg);
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    &__txt {
+        position: relative;
+        width: min(580px, 100%);
+        font-weight: 400;
+        font-size: 18px;
+        color: #8F8F8F;
+        margin-bottom: 30px;
+    }
+
+    &__txt::before {
+        content: '';
+        position: absolute;
+        width: 73px;
+        height: 5px;
+        top: -200px;
+        background: #C93A48;
+        box-shadow: 0px 0px 30px 0px #BD2D43;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
