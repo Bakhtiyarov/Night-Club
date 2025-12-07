@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+
+    &__banner {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        background: #111;
+    }
+
+    &__all {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 35px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        color: #DCDCDC;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        &-link {
+            font-weight: 700;
+            font-size: 24px;
+            color: #BD2D43;
+        }
+
+        &-txt {
+            font-weight: 400;
+            font-size: 12px;
+            color: #8F8F8F;
+            margin: 5px 0 15px;
+        }
+
+        &-logo {
+            margin-right: 15px;
+        }
+    }
+}
